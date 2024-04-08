@@ -15,7 +15,7 @@ variable "enable_https_traffic_only" {
   default     = "true"
 }
 
-variable "VAULT_TOKEN" {
-  description = "Vault Token for getting Azure credentials"
-  type        = string
-}
+# variable "VAULT_TOKEN" {
+#   description = "Vault Token for getting Azure credentials"
+#   type        = string
+# }
