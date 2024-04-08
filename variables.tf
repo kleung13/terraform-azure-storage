@@ -1,13 +1,21 @@
-variable "resource_group_name" {
-  default = "default-resource-group"
-}
-
-variable "location" {
-  default = "centralus"
-}
-
-variable "region" {
+variable "storage_account_name" {
+  description = "Name for the storage account"
   type        = string
-  description = "(optional) Default Azure region to deploy to."
-  default     = "centralus"
+}
+
+variable "public_network_access_enabled" {
+  description = "Public network access enabled if true"
+  type        = bool
+  default     = "false"
+}
+
+variable "enable_https_traffic_only" {
+  description = "Enable secure transfer to storage accounts if true"
+  type        = bool
+  default     = "true"
+}
+
+variable "VAULT_TOKEN" {
+  description = "Vault Token for getting Azure credentials"
+  type        = string
 }
