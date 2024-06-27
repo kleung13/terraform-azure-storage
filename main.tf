@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "main" {
   location = "canadacentral"
 }
 
+
 resource "azurerm_storage_account" "test" {
   name                          = var.storage_account_name
   resource_group_name           = azurerm_resource_group.main.name
